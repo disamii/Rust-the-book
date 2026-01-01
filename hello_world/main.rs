@@ -11,11 +11,14 @@ macro_rules! function_generator {
 }
 function_generator!(integer_adder, i32);
 function_generator!(string_adder, &str);
+
 macro_rules! my_print{
     ($val:expr) => {
         println!("my print macro: {}", $val);
     };
 }
+
+
 fn main() {
     println!("hello , world!");
     my_print!("This is a test");

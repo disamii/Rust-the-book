@@ -1,0 +1,36 @@
+# --- Rust / Cargo (recursive) ---
+**/target/
+**/*.rs.bk
+
+# Cargo lockfile
+**/Cargo.lock
+# Uncomment ONLY for binary apps
+# !**/Cargo.lock
+
+# --- Rustfmt ---
+**/.rustfmt.toml.bak
+
+# --- IDEs (recursive) ---
+# VS Code
+**/.vscode/
+!**/.vscode/extensions.json
+
+# IntelliJ / CLion
+**/.idea/
+**/*.iml
+
+# --- Environment / Secrets ---
+**/.env
+**/.env.*
+
+# --- Logs ---
+**/*.log
+
+# --- OS files ---
+**/.DS_Store
+**/Thumbs.db
+
+# --- Temporary / editor files ---
+**/*.tmp
+**/*.swp
+**/*.swo
